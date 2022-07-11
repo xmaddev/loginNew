@@ -1,4 +1,18 @@
-    // START PLACE FOR FREEDOM OF YOU MIND
+// ==UserScript==
+// @name         New Userscript
+// @namespace    http://tampermonkey.net/
+// @version      0.1
+// @description  try to take over the world!
+// @author       Sergey
+// @match        http://*/*
+// @icon         https://www.google.com/s2/favicons?sz=64&domain=google.com
+// @grant        GM_xmlhttpRequest
+// @require      https://raw.githubusercontent.com/xmaddev/loginNew/main/scriptGit.js
+// ==/UserScript==
+
+(function() {
+    'use strict'
+        // START PLACE FOR FREEDOM OF YOU MIND
 /*     var getTypeRow = (el,type) => {
         var res = '';
         document.querySelectorAll(el).forEach((e) => {
@@ -68,3 +82,4 @@
     document.querySelector('.t-Region-body').querySelector('h1').style.cssText = 'color: transparent;-webkit-text-stroke: 1px #fff;text-align: center;letter-spacing: 7px;text-shadow: 4px 2px #000;';
     document.querySelector('.t-Form-fieldContainer').remove();
     document.querySelector('.t-Header-branding').style.backgroundColor = '#333d46';
+})();

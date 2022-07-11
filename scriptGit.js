@@ -7,7 +7,6 @@
 // @match        http://*/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=google.com
 // @grant        GM_xmlhttpRequest
-// @require      https://raw.githubusercontent.com/xmaddev/loginNew/main/scriptGit.js
 // ==/UserScript==
 
 (function() {
@@ -32,7 +31,8 @@
     var linkYT = document.querySelector('.video-yt-slider>p+input').value;
     unsafeWindow.backgroundYT = function (link) {return sessionStorage.setItem('linkYT', link);}
     //delete Inregistrare sau Modificare
-    for (var i=0; i<4; i++){document.querySelector('.video-yt-slider').nextSibling.remove()}
+    for (var i=0; i<4; i++){document.querySelector('.video-yt-slider').nextSibling.remove();}
+    document.querySelector('.video-yt-slider').innerHTML += '<img style="display: block; margin-left: auto;margin-right: auto;width: 50%;width:60px;height:60px;" src="https://raw.githubusercontent.com/xmaddev/loginNew/main/pngwing.com.png" alt="SAD">';
     //inject link in head dinamically
     var headHTML = document.getElementsByTagName('head')[0].innerHTML;
     headHTML+= '<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">';
@@ -60,7 +60,7 @@
                 quotes.classList.add("animate__animated");
                 quotes.classList.add("animate__zoomIn");
                 quotes.innerText = obj.quoteText;
-                document.body.appendChild(quotes);
+                //document.body.appendChild(quotes);
                 quotes.style.cssText = 'text-shadow:2px 2px 6px #000;position:absolute;bottom:20px;width:60%;left: 0;right:0;margin:0 auto;background: #242424;opacity: .7;font-size: 1.6vw;color: transparent;-webkit-text-stroke: 1px rgb(255, 255, 255);text-align: center;letter-spacing: 4px;text-shadow: rgb(0 0 0) 4px 2px;';
             }
         }

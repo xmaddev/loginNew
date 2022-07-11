@@ -12,7 +12,6 @@
 
 (function() {
     'use strict'
-    alert("wew");
         // START PLACE FOR FREEDOM OF YOU MIND
 /*     var getTypeRow = (el,type) => {
         var res = '';

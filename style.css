@@ -14,7 +14,7 @@ iframe {
   height: 117vh;
   pointer-events: none;
 } 
-.t-Region-body h1 {
+.t-Region-body h1:first-child {
   color: transparent;
   -webkit-text-stroke: 1px #fff;
   text-align: center;

@@ -35,6 +35,15 @@ iframe {
   padding: 4px;
   color:#fff;
 }
+h1:before {
+  content: "";
+  display: block;
+  width: 36px;
+  height: 36px;
+  top: 3px;left: 42px;
+  position: absolute;
+  background: url(https://biparous-rhythms.000webhostapp.com/shapka-santy.png) center center / 100% no-repeat;
+}
 .btn-wrapper-login:hover:before {
   transition: 1s;
   left: 0;

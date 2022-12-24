@@ -14,6 +14,13 @@ iframe {
   height: 117vh;
   pointer-events: none;
 } 
+.t-Region-body h1 {
+  color: transparent;
+  -webkit-text-stroke: 1px #fff;
+  text-align: center;
+  letter-spacing: 7px;
+  text-shadow: 4px 2px #000;
+}
 .t-Region-body h1:after {
   content: "";
   display: block;

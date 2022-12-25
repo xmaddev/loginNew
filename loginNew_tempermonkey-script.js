@@ -6,13 +6,18 @@
 // @author       Sergey
 // @match        http://*/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=google.com
+// @resource     IMPORTED_CSS https://raw.githubusercontent.com/xmaddev/loginNew/main/style.css
 // @grant        GM_xmlhttpRequest
+// @grant        GM_getResourceText
+// @grant        GM_addStyle
 // @require      https://raw.githubusercontent.com/scottschiller/Snowstorm/master/snowstorm.js
 // @require      https://biparous-rhythms.000webhostapp.com/js/functions.js
 // ==/UserScript==
 
 (function() {
     'use strict'
+       //const my_css = GM_getResourceText("IMPORTED_CSS");
+   // GM_addStyle(my_css);
     /* ==================== SLIDE MEMES SECTION START =========================*/
     var mainDir = "https://biparous-rhythms.000webhostapp.com";
     var sliderMemes = () => {
@@ -99,9 +104,10 @@
     document.querySelector('.class2').style.borderStyle = 'none';
     document.querySelector('.row').style.opacity = '0.9';
     document.querySelector('.t-Region-body').querySelector('h1').innerText = 'МОЙ КОШЕЛЬ';
-    //document.querySelectorAll('.t-Region-bodyWrap')[1].style.cssText = 'font-family: "Mountains of Christmas";';
+    document.querySelectorAll('.t-Region-bodyWrap')[1].style.cssText = 'font-family: "Mountains of Christmas";';
     document.querySelector('.t-Region-body').querySelector('h1').style.cssText = 'color: transparent;-webkit-text-stroke: 1px #fff;text-align: center;letter-spacing: 7px;text-shadow: 4px 2px #000;background: linear-gradient(160deg, red 15%, white 20% 35%, red 40% 55%, white 60% 75%, red 80%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;';
     document.querySelector('.t-Form-fieldContainer').remove();
     document.querySelectorAll('.t-ContentBlock--lightBG .t-ContentBlock-body, .t-Region, .t-Region-header')[2].style.background = "rgba(255,255,255,.1)";
     document.querySelector('.t-Header-branding').style.backgroundColor = '#333d46';
+
 })();

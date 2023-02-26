@@ -36,6 +36,7 @@ GM_xmlhttpRequest({
 for (var i=0; i<5; i++){document.querySelector('.btn-wrapper-login').nextSibling.remove();}
 document.getElementsByClassName("t-Button")[0].addEventListener("click", function(){document.getElementsByClassName("quotes")[0].remove();});
 for(var el=1;el<document.getElementsByClassName('t-Form-itemWrapper').length;el++)document.getElementsByClassName('t-Form-itemWrapper')[el].style.cssText = 'border: 1px solid tomato;border-radius: 2px;';
+document.querySelectorAll('.t-Region')[1].insertAdjacentHTML('afterend','<div style="color: transparent;-webkit-text-stroke: 1px rgb(255, 255, 255);text-align: center;letter-spacing: 4px;text-shadow: rgb(0 0 0) 4px 2px;" class="copyright"><span style="font-family:Marck Script,cursive;color:#fff;font-size:22px;">Created by &lt;/Sergey&gt; <br>Spring Edition</span></div>');
 document.querySelector('.t-Region-body').classList.add("animate__animated"); //animate__bounceInUp
 document.querySelector('.t-Region-body').classList.add("animate__bounceInDown");
 document.querySelectorAll('.row')[1].classList.add("animate__animated");

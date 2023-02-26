@@ -3,7 +3,7 @@ document.getElementsByTagName('head')[0].insertAdjacentHTML( 'afterbegin','<styl
 document.getElementById('B115197341225796797').insertAdjacentHTML( 'afterend','<div onclick="apex.submit({request:\'Login\',validate:true});" class="btn-wrapper-login"><div class="btn-login"><span>Login</span></div></div>');
 document.getElementById('B115197341225796797').remove();
 document.getElementsByTagName('head')[0].insertAdjacentHTML( 'afterbegin','<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">');
-document.getElementsByTagName('head')[0].insertAdjacentHTML( 'afterbegin','<style type="text/css">@import url("https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@300&display=swap");body {overflow-x: hidden;}.video-container {width: 100vw;height: 100vh;overflow: hidden;position: absolute;}iframe {position: absolute;top: -10%;width: 100vw;height: 117vh;pointer-events: none;} .t-Login-body p {cursor: pointer;margin: 2px 0;background: #221e1d;text-align: center;margin-bottom: 1,2rem;padding: 4px;color:#fff;}</style>');
+document.getElementsByTagName('head')[0].insertAdjacentHTML( 'afterbegin','<style type="text/css">@import url("https://fonts.googleapis.com/css2?family=Marck+Script&display=swap");body {overflow-x: hidden;}.video-container {width: 100vw;height: 100vh;overflow: hidden;position: absolute;}iframe {position: absolute;top: -10%;width: 100vw;height: 117vh;pointer-events: none;} .t-Login-body p {cursor: pointer;margin: 2px 0;background: #221e1d;text-align: center;margin-bottom: 1,2rem;padding: 4px;color:#fff;}</style>');
 //chack class exist
 function hasClass( target, className ) {
   return new RegExp('(\\s|^)' + className + '(\\s|$)').test(target.className);
@@ -28,7 +28,7 @@ GM_xmlhttpRequest({
           quotes.classList.add("animate__zoomIn");
           quotes.innerText = obj.quoteText;
           document.body.appendChild(quotes);
-          quotes.style.cssText = 'font-family: "Shantell Sans", cursive;text-shadow:2px 2px 6px #000;position:absolute;bottom:20px;width:60%;left: 0;right:0;margin:0 auto;font-size: 1.6vw;color: transparent;-webkit-text-stroke: 1px rgb(255, 255, 255);text-align: center;letter-spacing: 4px;text-shadow: rgb(0 0 0) 4px 2px;';
+          quotes.style.cssText = 'font-family: "Marck Script", cursive;, cursive;text-shadow:2px 2px 6px #000;position:absolute;bottom:20px;width:60%;left: 0;right:0;margin:0 auto;font-size: 1.6vw;color: transparent;-webkit-text-stroke: 1px rgb(255, 255, 255);text-align: center;letter-spacing: 4px;text-shadow: rgb(0 0 0) 4px 2px;';
       }
   }
 });
@@ -47,7 +47,7 @@ document.querySelector('h1').style.fontFamily = 'fangsong';
 document.querySelector('.class2').style.borderStyle = 'none';
 document.querySelector('.row').style.opacity = '0.9';
 document.querySelector('.t-Region-body').querySelector('h1').innerText = 'МОЙ КОШЕЛЬ';
-document.querySelector('.t-Region-body').querySelector('h1').style.cssText = 'font-family: "Shantell Sans", cursive;color: transparent;-webkit-text-stroke: 1px #fff;text-align: center;letter-spacing: 7px;text-shadow: 4px 2px #000;';
+document.querySelector('.t-Region-body').querySelector('h1').style.cssText = 'font-family: "Marck Script", cursive;color: transparent;-webkit-text-stroke: 1px #fff;text-align: center;letter-spacing: 7px;text-shadow: 4px 2px #000;';
 document.querySelector('.t-Form-fieldContainer').remove();
 document.querySelectorAll('.t-ContentBlock--lightBG .t-ContentBlock-body, .t-Region, .t-Region-header')[2].style.background = "rgba(255,255,255,.1)";
 document.querySelector('.t-Header-branding').style.backgroundColor = '#333d46';

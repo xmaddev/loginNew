@@ -9,7 +9,7 @@ if(bodyClasses == 'page-3')
      GM_xmlhttpRequest ({
          method:     "POST",
          url:        url,
-         data:       JSON.stringify(_data.data),
+         data:       _data.data,
          headers: {
              'Content-Type': 'application/json'
          },

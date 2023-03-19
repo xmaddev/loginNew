@@ -1,5 +1,5 @@
 //check existese class
-var bodyClasses = document.querySelector('html').className[0];
+var bodyClasses = document.querySelector('html').className.split(' ')[0];
 if(bodyClasses == 'page-1')
 {
  //PAGE WALLET

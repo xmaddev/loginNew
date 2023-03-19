@@ -1,6 +1,6 @@
 //check existese class
 var bodyClasses = document.querySelector('html').className.split(' ')[0];
-if(bodyClasses == 'page-1')
+if(bodyClasses == 'page-3')
 {
  //PAGE WALLET
  const url = 'https://biparous-rhythms.000webhostapp.com/assets/insertData.php';

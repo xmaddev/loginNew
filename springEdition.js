@@ -3,7 +3,6 @@ var bodyClasses = document.querySelector('html').className.split(' ')[0];
 if(bodyClasses == 'page-3')
 {
  let getIncome = () => {
-    const _date = new Date();
     // ✅ DD/MM/YYYY
     const date = new Date().toLocaleDateString('en-GB').replace(/\//g,'.');
     let arrOfIndex = [];

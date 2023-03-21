@@ -15,10 +15,14 @@ if(bodyClasses == 'page-3')
     })
     var summ = 0;
     var bounsRang = document.querySelectorAll('[headers=BONUS_RANG]');
+    var bonusNelikv = document.querySelectorAll('[headers=BONUS_NELIKV]');
+    var bonusCek = document.querySelectorAll('[headers=BONUS_CEK]')
+    var bonusServ = document.querySelectorAll('[headers=BONUS_SERV]');;
+    var bonusTerm = document.querySelectorAll('[headers=BONUS_TERM]');
     var cadou = document.querySelectorAll('[headers=CADOU]');
-    var premia = document.querySelectorAll('[headers=PREMIA]');
     arrOfIndex.forEach((item) => {
-            summ += parseFloat(bounsRang[item].innerHTML.replace(',','.').replace('-','0')) +parseFloat(cadou[item].innerHTML.replace(',','.').replace('-','0')) + parseFloat(premia[item].innerHTML.replace(',','.').replace('-','0'));
+           // BONUS_RANG,BONUS_NELIKV,BONUS_CEK,BONUS_SERV,BONUS_TERM,CADOU
+            summ += parseFloat(bounsRang[item].innerHTML.replace(',','.').replace('-','0')) +  parseFloat(bounsRang[item].innerHTML.replace(',','.').replace('-','0')) ;
     })
     console.log(summ);
  }   

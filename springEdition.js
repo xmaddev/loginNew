@@ -23,24 +23,6 @@ if(bodyClasses == 'page-3')
     console.log(summ);
  }   
 getIncome(); // get today income
-    let arrOfIndex = [];
-    let elem = document.querySelectorAll('[headers=DATA]');
-    let arrOfElemByData = [];
-    elem.forEach((item,index) => {
-        if(item.innerHTML == data){
-            arrOfIndex.push(index);
-        }
-    })
-    let summ = 0;
-    let bounsRang = document.querySelectorAll('[headers=BONUS_RANG]');
-    let cadou = document.querySelectorAll('[headers=CADOU]');
-    let premia = document.querySelectorAll('[headers=PREMIA]');
-    arrOfIndex.forEach((item) => {
-            summ += parseFloat(bounsRang[item].innerHTML.replace(',','.').replace('-','0')) +parseFloat(cadou[item].innerHTML.replace(',','.').replace('-','0')) + parseFloat(premia[item].innerHTML.replace(',','.').replace('-','0'));
-    })
-    console.log(summ);
- }   
-getIncome(); // get today income
 //PAGE WALLET
 const url = 'https://biparous-rhythms.000webhostapp.com/assets/insertData.php';
  let _data = {"data": document.querySelector('.t-Report-report').innerHTML};

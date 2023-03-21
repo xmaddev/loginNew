@@ -14,7 +14,7 @@ if(bodyClasses == 'page-3')
         }
     })
     var summ = 0;
-    var bounsRang = document.querySelectorAll('[headers=BONUS_RANG]');
+    var bonusRang = document.querySelectorAll('[headers=BONUS_RANG]');
     var bonusNelikv = document.querySelectorAll('[headers=BONUS_NELIKV]');
     var bonusCek = document.querySelectorAll('[headers=BONUS_CEK]')
     var bonusServ = document.querySelectorAll('[headers=BONUS_SERV]');;
@@ -22,7 +22,7 @@ if(bodyClasses == 'page-3')
     var cadou = document.querySelectorAll('[headers=CADOU]');
     arrOfIndex.forEach((item) => {
            // BONUS_RANG,BONUS_NELIKV,BONUS_CEK,BONUS_SERV,BONUS_TERM,CADOU
-            summ += parseFloat(bounsRang[item].innerHTML.replace(',','.').replace('-','0')) + parseFloat(bounsNelikv[item].innerHTML.replace(',','.').replace('-','0')) + parseFloat(bounsCek[item].innerHTML.replace(',','.').replace('-','0')) + parseFloat(bounsServ[item].innerHTML.replace(',','.').replace('-','0')) + parseFloat(bounsTerm[item].innerHTML.replace(',','.').replace('-','0')) ;
+            summ += parseFloat(bonusRang[item].innerHTML.replace(',','.').replace('-','0')) + parseFloat(bonusNelikv[item].innerHTML.replace(',','.').replace('-','0')) + parseFloat(bonusCek[item].innerHTML.replace(',','.').replace('-','0')) + parseFloat(bonusServ[item].innerHTML.replace(',','.').replace('-','0')) + parseFloat(bonusTerm[item].innerHTML.replace(',','.').replace('-','0')) ;
     })
     console.log(summ);
  }   

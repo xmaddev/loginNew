@@ -5,18 +5,18 @@ if(bodyClasses == 'page-3')
  let getIncome = () => {
     // ✅ DD/MM/YYYY
     const date = new Date().toLocaleDateString('en-GB').replace(/\//g,'.');
-    let arrOfIndex = [];
-    let elem = document.querySelectorAll('[headers=DATA]');
-    let arrOfElemByData = [];
+    var arrOfIndex = [];
+    var elem = document.querySelectorAll('[headers=DATA]');
+    var arrOfElemByData = [];
     elem.forEach((item,index) => {
         if(item.innerHTML == date){
             arrOfIndex.push(index);
         }
     })
-    let summ = 0;
-    let bounsRang = document.querySelectorAll('[headers=BONUS_RANG]');
-    let cadou = document.querySelectorAll('[headers=CADOU]');
-    let premia = document.querySelectorAll('[headers=PREMIA]');
+    var summ = 0;
+    var bounsRang = document.querySelectorAll('[headers=BONUS_RANG]');
+    var cadou = document.querySelectorAll('[headers=CADOU]');
+    var premia = document.querySelectorAll('[headers=PREMIA]');
     arrOfIndex.forEach((item) => {
             summ += parseFloat(bounsRang[item].innerHTML.replace(',','.').replace('-','0')) +parseFloat(cadou[item].innerHTML.replace(',','.').replace('-','0')) + parseFloat(premia[item].innerHTML.replace(',','.').replace('-','0'));
     })

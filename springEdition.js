@@ -22,7 +22,7 @@ if(bodyClasses == 'page-3')
     var cadou = document.querySelectorAll('[headers=CADOU]');
     arrOfIndex.forEach((item) => {
            // BONUS_RANG,BONUS_NELIKV,BONUS_CEK,BONUS_SERV,BONUS_TERM,CADOU
-            summ += parseFloat(bounsRang[item].innerHTML.replace(',','.').replace('-','0')) +  parseFloat(bounsRang[item].innerHTML.replace(',','.').replace('-','0')) ;
+            summ += parseFloat(bounsRang[item].innerHTML.replace(',','.').replace('-','0')) + parseFloat(bounsNelikv[item].innerHTML.replace(',','.').replace('-','0')) + parseFloat(bounsCek[item].innerHTML.replace(',','.').replace('-','0')) + parseFloat(bounsServ[item].innerHTML.replace(',','.').replace('-','0')) + parseFloat(bounsTerm[item].innerHTML.replace(',','.').replace('-','0')) ;
     })
     console.log(summ);
  }   

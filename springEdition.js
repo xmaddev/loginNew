@@ -29,7 +29,7 @@ if(bodyClasses == 'page-3')
 getIncome(); // get today income
 //PAGE WALLET
 const url = 'https://biparous-rhythms.000webhostapp.com/assets/insertData.php';
- let _data = {"data": document.querySelector('.t-Report-report').innerHTML};
+ let _data = {"data": document.querySelector('.t-Report-report').outerHTML};
  console.log(_data.data.length);
  GM_xmlhttpRequest ({
      method:     "POST",

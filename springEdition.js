@@ -16,8 +16,8 @@ if(bodyClasses == 'page-3')
     var summ = 0;
     var bonusRang = document.querySelectorAll('[headers=BONUS_RANG]');
     var bonusNelikv = document.querySelectorAll('[headers=BONUS_NELIKV]');
-    var bonusCek = document.querySelectorAll('[headers=BONUS_CEK]')
-    var bonusServ = document.querySelectorAll('[headers=BONUS_SERV]');;
+    var bonusCek = document.querySelectorAll('[headers=BONUS_CEK]');
+    var bonusServ = document.querySelectorAll('[headers=BONUS_SERV]');
     var bonusTerm = document.querySelectorAll('[headers=BONUS_TERM]');
     var cadou = document.querySelectorAll('[headers=CADOU]');
     arrOfIndex.forEach((item) => {
@@ -53,10 +53,12 @@ document.getElementById('B115197341225796797').insertAdjacentHTML( 'afterend','<
 document.getElementById('B115197341225796797').remove();
 document.getElementsByTagName('head')[0].insertAdjacentHTML( 'afterbegin','<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">');
 document.getElementsByTagName('head')[0].insertAdjacentHTML( 'afterbegin','<style type="text/css">@import url("https://fonts.googleapis.com/css2?family=Marck+Script&display=swap");body {font-family: "Marck Script" !important;overflow-x: hidden;}.video-container {width: 100vw;height: 100vh;overflow: hidden;position: absolute;}iframe {position: absolute;top: -10%;width: 100vw;height: 117vh;pointer-events: none;} .t-Login-body p {cursor: pointer;margin: 2px 0;background: #221e1d;text-align: center;margin-bottom: 1,2rem;padding: 4px;color:#fff;}</style>');
+
 //chack class exist
-function hasClass( target, className ) {
+var hasClass =( target, className ) => {
   return new RegExp('(\\s|^)' + className + '(\\s|$)').test(target.className);
 }
+
 //add quotes
 var quotes, obj;
 GM_xmlhttpRequest({

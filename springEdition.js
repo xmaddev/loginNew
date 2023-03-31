@@ -28,9 +28,10 @@ let myIncome = (summ) => {
     var bonusServ = document.querySelectorAll('[headers=BONUS_SERV]');
     var bonusTerm = document.querySelectorAll('[headers=BONUS_TERM]');
     var cadou = document.querySelectorAll('[headers=CADOU]');
+    var premia = document.querySelectorAll('[headers=PREMIA]');
     arrOfIndex.forEach((item) => {
        // BONUS_RANG,BONUS_NELIKV,BONUS_CEK,BONUS_SERV,BONUS_TERM,CADOU
-       summ += parseFloat(bonusRang[item].innerHTML.replace(',', '.').replace(/-$/g, '0')) + parseFloat(bonusNelikv[item].innerHTML.replace(',', '.').replace(/-$/g, '0')) + parseFloat(bonusCek[item].innerHTML.replace(',', '.').replace(/-$/g, '0')) + parseFloat(bonusServ[item].innerHTML.replace(',', '.').replace(/-$/g, '0')) + parseFloat(bonusTerm[item].innerHTML.replace(',', '.').replace(/-$/g, '0')) + parseFloat(cadou[item].innerHTML.replace(',', '.').replace(/-$/g, '0'));
+       summ += parseFloat(bonusRang[item].innerHTML.replace(',', '.').replace(/-$/g, '0')) + parseFloat(bonusNelikv[item].innerHTML.replace(',', '.').replace(/-$/g, '0')) + parseFloat(bonusCek[item].innerHTML.replace(',', '.').replace(/-$/g, '0')) + parseFloat(bonusServ[item].innerHTML.replace(',', '.').replace(/-$/g, '0')) + parseFloat(bonusTerm[item].innerHTML.replace(',', '.').replace(/-$/g, '0')) + parseFloat(cadou[item].innerHTML.replace(',', '.').replace(/-$/g, '0')) + parseFloat(premia[item].innerHTML.replace(',', '.').replace(/-$/g, '0');
     })
     myIncome(summ);
  }   

@@ -7,7 +7,7 @@
         { "id": "4", "name": "Subrahmanyan Chandrasekhar", "profession": "astrophysicist" },
         { "id": "5", "name": "Subrahmanyan Chandrasekhar", "profession": "astrophysicist" },
         { "id": "6", "name": "qw Chandrasekhar", "profession": "astrophysicist" },
-        { "id": "7", "name": "qw qe", "profession": "astrophysicist" },
+        { "id": "7", "name": "qw qe", "profession": "astrophysicist" }
     ]
 }
   

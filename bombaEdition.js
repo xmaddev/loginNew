@@ -34,10 +34,10 @@ let myIncome = (summ) => {
        summ += parseFloat(bonusRang[item].innerHTML.replace(',', '.').replace(/-$/g, '0')) + parseFloat(bonusNelikv[item].innerHTML.replace(',', '.').replace(/-$/g, '0')) + parseFloat(bonusCek[item].innerHTML.replace(',', '.').replace(/-$/g, '0')) + parseFloat(bonusServ[item].innerHTML.replace(',', '.').replace(/-$/g, '0')) + parseFloat(bonusTerm[item].innerHTML.replace(',', '.').replace(/-$/g, '0')) + parseFloat(cadou[item].innerHTML.replace(',', '.').replace(/-$/g, '0')) + parseFloat(premia[item].innerHTML.replace(',', '.').replace(/-$/g, '0'));
     })
     myIncome(summ);
- }   
+ }
 getIncome(); // get today income
-
-// get season 
+}
+// get season
 const getSeason = new Date();
 const month = getSeason.getMonth() + 1;
 var urlBackgroundParam = '';
@@ -57,7 +57,6 @@ else if (month == 9 || month == 10 || month == 11) {
     urlBackgroundParam = 'autumn,potter,harrypotter';
     console.log(urlBackgroundParam);
 }
-
 if(bodyClasses == 'page-2')
 {
 // PAGE LOGIN
@@ -98,7 +97,7 @@ document.querySelector('.t-Region-body').classList.add("animate__animated"); //a
 document.querySelector('.t-Region-body').classList.add("animate__bounceInDown");
 document.querySelectorAll('.row')[1].classList.add("animate__animated");
 document.querySelectorAll('.row')[1].classList.add("animate__bounceInUp");
-document.body.style.background = 'url(https://source.unsplash.com/1920x1080/?'+ urlBackgroundParam + ') no-repeat center/100%';
+document.body.style.background = 'url(https://source.unsplash.com/1920x1080/?'+ urlBackgroundParam +') no-repeat center/100%';
 document.body.style.backgroundSize = "cover";
 document.querySelector('.t-Button').style.backgroundColor = 'tomato';
 document.querySelector('h1').style.fontFamily = 'fangsong';
